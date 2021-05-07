@@ -42,7 +42,7 @@
 			"all": true
 		},
 		"window": {
-			"title": "Tauri Test",
+			"title": "MQTT Tools",
 			"width": 1200,
 			"height": 800,
 			"resizable": true,

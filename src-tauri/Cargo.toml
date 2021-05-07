@@ -12,7 +12,17 @@ build = "src/build.rs"
 [dependencies]
 serde_json = "1.0"
 serde = { version = "1.0", features = [ "derive" ] }
-tauri = { version = "0.11.1", features = [ "all-api" ] }
+lazy_static = "1.4"
+log = "0.4.14"
+env_logger = "0.8.3"
+chrono = "0.4.19"
+paho-mqtt = "0.9"
+anyhow = "1.0.40"
+crypto = { path = "../../Rust_lib/crypto" }
+
+  [dependencies.tauri]
+  version = "0.11.1"
+  features = [ "all-api" ]
 
 [target."cfg(windows)".build-dependencies]
 winres = "0.1"
